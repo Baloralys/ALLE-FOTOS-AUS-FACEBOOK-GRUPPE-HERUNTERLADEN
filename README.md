@@ -27,4 +27,4 @@ javascript:var items = document.getElementsByClassName('_53s fbPhotoCurationCont
 **Hinweis: Achte auch nach dem kopieren und einfügen bitte darauf, dass "javascript" ebenfalls eingefügt wurde. Und beachte das Download-Verzeichnis beim Google Chrome Browser, sinnvoll wäre es einen extra Ordner anzulegen und den Download dorthin zu verweisen.**
 
 
-> Bitte beachten: Je nach Anzahl der Freunde und Geschwindigkeit des Rechners kann das eine ganze Weile dauern. Man muss nur etwas Geduld haben.
+> Bitte beachten: Je nach Anzahl der Fotos und Geschwindigkeit des Rechners kann das eine ganze Weile dauern. Man muss nur etwas Geduld haben.
