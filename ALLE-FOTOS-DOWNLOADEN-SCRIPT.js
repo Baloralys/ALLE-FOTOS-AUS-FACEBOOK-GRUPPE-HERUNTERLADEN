@@ -1,0 +1,2 @@
+/* Facebook Gruppen / Fotoalben herunterladen */
+javascript:var items = document.getElementsByClassName('_53s fbPhotoCurationControlWrapper fbPhotoStarGridElement fbPhotoStarGridNonStarred _53s fbPhotoCurationControlWrapper');var divsToAppend = ""; for (var i = 0; i < items.length; i++){ divsToAppend += '<a href="'+ items[i].getAttribute("data-starred-src") +'" class="dlpic" download="">Download</a>'; };document.body.innerHTML = divsToAppend; var inputs = document.getElementsByClassName('dlpic'); for(var i=0; i<inputs.length;i++) { inputs[i].click() };
