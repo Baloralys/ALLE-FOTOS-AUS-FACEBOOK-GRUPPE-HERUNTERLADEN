@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Alle-fotos-aus-facebook-gruppe-herunterladen by Manni-T-xX2006Xx</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Manni-T-xX2006Xx/ALLE-FOTOS-AUS-FACEBOOK-GRUPPE-HERUNTERLADEN">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Manni-T-xX2006Xx/ALLE-FOTOS-AUS-FACEBOOK-GRUPPE-HERUNTERLADEN/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Manni-T-xX2006Xx/ALLE-FOTOS-AUS-FACEBOOK-GRUPPE-HERUNTERLADEN/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Alle-fotos-aus-facebook-gruppe-herunterladen</h1>
+          <p>Mit diesem Javascript könnt ihr die Fotos aus den einzelnen Alben einer Facebookgruppe herunterladen und müsst nicht jedes einzelnd anklicken.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Manni-T-xX2006Xx">Manni-T-xX2006Xx</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="alle-fotos-aus-facebook-gruppe-herunterladen" class="anchor" href="#alle-fotos-aus-facebook-gruppe-herunterladen" aria-hidden="true"><span class="octicon octicon-link"></span></a>ALLE-FOTOS-AUS-FACEBOOK-GRUPPE-HERUNTERLADEN</h1>
+
+<p>Mit diesem Javascript könnt ihr die Fotos aus den einzelnen Alben einer Facebookgruppe herunterladen und müsst nicht jedes einzelnd anklicken.</p>
+
+<h2>
+<a id="anleitung" class="anchor" href="#anleitung" aria-hidden="true"><span class="octicon octicon-link"></span></a>ANLEITUNG:</h2>
+
+<p>Hier wird genau beschrieben, wie du alle Fotos aus einem Facebook-Gruppen Fotoalbum downloaden kannst.</p>
+
+<ol>
+<li><p>Klicke bei der Facebook-Gruppe auf FOTOS &gt; ALBUM AUSWÄHLEN</p></li>
+<li><p>Scrolle bis ganz nach unten, damit die Fotos vollständig geladen werden, da sonst nicht alle Fotos geladen werden</p></li>
+<li><p>Drücke jetzt (gleichzeitig)</p></li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>Tastenkombination</th>
+<th>Browser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>STRG + SHIFT + J</strong></td>
+<td>Google Chrome</td>
+</tr>
+</tbody>
+</table>
+
+<p>Es wird sich ein Fenster mit einem Eingabebereich öffnen. 
+Bei Google Chrome Browser muss man zusätzlich zuerst auf CONSOLE klicken.</p>
+
+<h6>
+<a id="für-facebook-gruppen-folgenden-code-kopieren-und-einfügen-danach-auf-enter-drücken" class="anchor" href="#f%C3%BCr-facebook-gruppen-folgenden-code-kopieren-und-einf%C3%BCgen-danach-auf-enter-dr%C3%BCcken" aria-hidden="true"><span class="octicon octicon-link"></span></a>Für Facebook-Gruppen folgenden Code kopieren und einfügen. Danach auf Enter drücken:</h6>
+
+<div class="highlight highlight-javascript"><pre>javascript<span class="pl-k">:</span><span class="pl-k">var</span> items <span class="pl-k">=</span> <span class="pl-c1">document</span>.getElementsByClassName(<span class="pl-s"><span class="pl-pds">'</span>_53s fbPhotoCurationControlWrapper fbPhotoStarGridElement fbPhotoStarGridNonStarred _53s fbPhotoCurationControlWrapper<span class="pl-pds">'</span></span>);<span class="pl-k">var</span> divsToAppend <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>; <span class="pl-k">for</span> (<span class="pl-k">var</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> items.<span class="pl-c1">length</span>; i<span class="pl-k">++</span>){ divsToAppend <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;a href="<span class="pl-pds">'</span></span><span class="pl-k">+</span> items[i].<span class="pl-c1">getAttribute</span>(<span class="pl-s"><span class="pl-pds">"</span>data-starred-src<span class="pl-pds">"</span></span>) <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">'</span>" class="dlpic" download=""&gt;Download&lt;/a&gt;<span class="pl-pds">'</span></span>; };<span class="pl-c1">document</span>.<span class="pl-c1">body</span>.innerHTML <span class="pl-k">=</span> divsToAppend; <span class="pl-k">var</span> inputs <span class="pl-k">=</span> <span class="pl-c1">document</span>.getElementsByClassName(<span class="pl-s"><span class="pl-pds">'</span>dlpic<span class="pl-pds">'</span></span>); <span class="pl-k">for</span>(<span class="pl-k">var</span> i<span class="pl-k">=</span><span class="pl-c1">0</span>; i<span class="pl-k">&lt;</span>inputs.<span class="pl-c1">length</span>;i<span class="pl-k">++</span>) { inputs[i].<span class="pl-c1">click</span>() };</pre></div>
+
+<hr>
+
+<p><strong>Hinweis: Achte auch nach dem kopieren und einfügen bitte darauf, dass "javascript" ebenfalls eingefügt wurde. Und beachte das Download-Verzeichnis beim Google Chrome Browser, sinnvoll wäre es einen extra Ordner anzulegen und den Download dorthin zu verweisen.</strong></p>
+
+<blockquote>
+<p>Bitte beachten: Je nach Anzahl der Freunde und Geschwindigkeit des Rechners kann das eine ganze Weile dauern. Man muss nur etwas Geduld haben.</p>
+</blockquote>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
